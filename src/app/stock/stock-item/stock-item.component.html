@@ -4,6 +4,6 @@
        [ngClass]="stock.stockClasses">
     $ {{stock.price}}</div>
 
-  <button (click)="toggleFavorite($event, i)"
+  <button (click)="toggleFavorite($event, stock)"
           [disabled]="stock.favorite">Add to Favorite</button>
 </div>
