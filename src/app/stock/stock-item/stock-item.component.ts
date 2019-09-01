@@ -1,4 +1,11 @@
-import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
+import {
+  Component,
+  Input,
+  Output,
+  EventEmitter,
+  OnInit,
+  ChangeDetectionStrategy,
+} from '@angular/core';
 
 import { Stock } from '../../model/stock';
 
@@ -6,6 +13,7 @@ import { Stock } from '../../model/stock';
   selector: 'app-stock-item',
   templateUrl: './stock-item.component.html',
   styleUrls: ['./stock-item.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class StockItemComponent implements OnInit {
 
@@ -22,6 +30,10 @@ export class StockItemComponent implements OnInit {
 
   onToggleFavorite(event, stock: Stock) {
     this.toggleFavorite.emit(stock);
+  }
+
+  changeStockPrice(stock: Stock) {
+    stock.price += 5;
   }
 
 }

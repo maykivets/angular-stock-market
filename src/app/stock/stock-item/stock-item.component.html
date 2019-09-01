@@ -1,9 +1,10 @@
 <div *ngFor="let stock of stocks; index as i" class="stock-container">
   <div class="name">{{stock.name + ' (' + stock.code + ')'}}</div>
   <div class="price"
-       [ngClass]="stock.stockClasses">
+       [(ngClass)]="stock.stockClasses">
     $ {{stock.price}}</div>
 
   <button (click)="onToggleFavorite($event, stock)"
           [disabled]="stock.favorite">Add to Favorite</button>
+  <button (click)="changeStockPrice(stock)">Change Price by 5</button>
 </div>

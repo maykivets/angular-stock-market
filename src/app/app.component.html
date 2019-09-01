@@ -6,4 +6,10 @@
     [stocks]='stocks'
     (toggleFavorite)="onToggleFavoriteParent($event)"
   ></app-stock-item>
+
+  <div *ngFor='let stock of stocks; index as i'>
+  <button
+    (click)="changeStockObject(i)">Change Stock {{i}}</button>
+  <button (click)="changeStockPriceParent(stock)">Change Price by 10 for {{i}}</button>
+  </div>
 </div>
