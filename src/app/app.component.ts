@@ -17,6 +17,10 @@ export class AppComponent implements OnInit {
       new Stock('Last Stock Company', 'LSC', 876, 765)
     ];
     this.stocks.push(new Stock('Test Stock Company', 'TSC', 80.1, 80));
+  }
 
+  onToggleFavoriteParent(stock: Stock) {
+    console.log('Favorite for stock ', stock, ' was triggered');
+    stock.favorite = !stock.favorite;
   }
 }
