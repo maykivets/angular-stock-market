@@ -40,27 +40,27 @@ export class StockItemComponent implements OnInit, OnChanges,
   }
 
   ngOnInit(): void {
-    console.log('Stock Item Component - On Init');
+    // console.log('Stock Item Component - On Init');
   }
   ngAfterViewInit(): void {
-    console.log('Stock Item Component - After View Init');
+    // console.log('Stock Item Component - After View Init');
   }
   ngAfterViewChecked(): void {
-    console.log('Stock Item Component - After View Checked');
+    // console.log('Stock Item Component - After View Checked');
   }
   ngAfterContentInit(): void {
-    console.log('Stock Item Component - After Content Init');
+    // console.log('Stock Item Component - After Content Init');
   }
   ngAfterContentChecked(): void {
-    console.log('Stock Item Component - After Content Checked');
+    // console.log('Stock Item Component - After Content Checked');
   }
   ngDoCheck(): void {
-    console.log('Stock Item Component - Do Check');
+    // console.log('Stock Item Component - Do Check');
   }
   ngOnDestroy(): void {
-    console.log('Stock Item Component - On Destroy');
+    // console.log('Stock Item Component - On Destroy');
   }
   ngOnChanges(changes: SimpleChanges): void {
-    console.log('Stock Item Component - On Changes - ', changes);
+    // console.log('Stock Item Component - On Changes - ', changes);
   }
 }

@@ -32,7 +32,11 @@ export class AppComponent implements OnInit, OnChanges, OnDestroy,
       new Stock('Last Stock Company', 'LSC', 876, 765)
     ];
     this.stocks.push(new Stock('Test Stock Company', 'TSC', 80.1, 80));
-    console.log('App Component - On Init');
+    // console.log('App Component - On Init');
+  }
+
+  testMethod() {
+    console.log('Test method in AppComponent triggered');
   }
 
   onToggleFavoriteParent(stock: Stock) {
@@ -56,24 +60,24 @@ export class AppComponent implements OnInit, OnChanges, OnDestroy,
   }
 
   ngAfterViewInit(): void {
-    console.log('App Component - After View Init');
+    // console.log('App Component - After View Init');
   }
   ngAfterViewChecked(): void {
-    console.log('App Component - After View Checked');
+    // console.log('App Component - After View Checked');
   }
   ngAfterContentInit(): void {
-    console.log('App Component - After Content Init');
+    // console.log('App Component - After Content Init');
   }
   ngAfterContentChecked(): void {
-    console.log('App Component - After Content Checked');
+    // console.log('App Component - After Content Checked');
   }
   ngDoCheck(): void {
-    console.log('App Component - Do Check');
+    // console.log('App Component - Do Check');
   }
   ngOnDestroy(): void {
-    console.log('App Component - On Destroy');
+    // console.log('App Component - On Destroy');
   }
   ngOnChanges(changes: SimpleChanges): void {
-    console.log('App Component - On Changes - ', changes);
+    // console.log('App Component - On Changes - ', changes);
   }
 }

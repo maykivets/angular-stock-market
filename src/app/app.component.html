@@ -12,4 +12,18 @@
     (click)="changeStockObject(i)">Change Stock {{i}}</button>
   <button (click)="changeStockPriceParent(stock)">Change Price by 10 for {{i}}</button>
   </div>
+
+  <hr>
+
+  <app-stock-item [stocks]='stocks'>
+    <button (click)="testMethod()">With Button 1</button>
+  </app-stock-item>
+
+  <hr>
+
+  <app-stock-item [stocks]='stocks'>
+    No buttons for you!!
+  </app-stock-item>
+
+
 </div>
